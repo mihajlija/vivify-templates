@@ -70,6 +70,12 @@ header {
       padding-left: 3em;
       color: $accent-color;
       font-size: $big;
+      display: flex;
+      align-items: center;
+
+      p {
+          padding-left: 2em;
+      }
     }
 
     ul {
@@ -77,6 +83,7 @@ header {
       li {
         padding-top: 1em;
         padding-right: 1em;
+        padding-bottom: 1em;
       }
     }
   }
@@ -193,7 +200,7 @@ footer {
   }
 }
 
-@media (max-width: 730px) {
+@media (max-width: 770px) {
   main {
     grid-template-areas:
       "sidebar"
@@ -208,6 +215,11 @@ footer {
       align-items: center;
       .logo {
         padding-left: 0;
+        flex-direction: column;
+
+        p {
+            padding: 0;
+        }
       }
       ul {
         flex-direction: column;
